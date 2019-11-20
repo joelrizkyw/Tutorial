@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="Example of RadioButton"
+        android:textSize="30sp" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageButton"
+        android:src="@mipmap/ic_launcher"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="The most used IDE for making android app ?"
+        android:textColor="@color/colorAccent"
+        android:textSize="18sp" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/textView"
+        android:layout_alignStart="@id/textView"
+        android:layout_alignLeft="@id/textView"
+        android:layout_marginStart="-41dp"
+        android:layout_marginLeft="-41dp"
+        android:layout_marginTop="0dp"
+        android:gravity="center_horizontal">
+
+        <RadioButton
+            android:id="@+id/radioButton"
+            android:layout_width="243dp"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/radioGroup"
+            android:layout_centerHorizontal="true"
+            android:checked="false"
+            android:gravity="center_horizontal"
+            android:text="Netbeans"
+            android:textColor="@android:color/background_dark"
+            android:textSize="20sp" />
+
+        <RadioButton
+            android:id="@+id/radioButton2"
+            android:layout_width="243dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/radioButton"
+            android:layout_centerHorizontal="true"
+            android:checked="false"
+            android:gravity="center_horizontal"
+            android:text="Android Studio"
+            android:textSize="20sp" />
+
+        <RadioButton
+            android:id="@+id/radioButton3"
+            android:layout_width="243dp"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:gravity="center_horizontal"
+            android:text="Eclipse"
+            android:textSize="20sp" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:text="Click Me" />
+</RelativeLayout>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textTop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:text="EditText Example"
+        android:textColor="#409ca8"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/ediTxt1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/button"
+        android:layout_alignRight="@id/button"
+        android:layout_marginTop="205dp"
+        android:hint="Enter Any Text"
+        android:inputType="text"
+        android:textColorHighlight="@android:color/holo_blue_dark"
+        android:textColorLink="@android:color/holo_blue_dark" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="343dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="255dp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:text="SHOW TEXT"
+        android:textColor="#409ca8"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+</RelativeLayout>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textTop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:text="TextView Example"
+        android:textColor="#409ca8"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/text1"
+        android:layout_width="343dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="175dp"
+        android:fontFamily="cursive"
+        android:text="This is a text View"
+        android:textColor="#409ca8"
+        android:textSize="75sp" />
+
+    <TextView
+        android:id="@+id/text2"
+        android:layout_width="343dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text1"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="cursive"
+        android:text="Hello World !"
+        android:textColor="#409ca8"
+        android:textSize="75sp" />
+</RelativeLayout>
